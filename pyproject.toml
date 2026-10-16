@@ -1,0 +1,13 @@
+[project]
+name = "anki-review-mcp"
+version = "0.1.0"
+description = "Local conversational review tools backed by Anki's scheduler"
+requires-python = ">=3.12"
+dependencies = ["anki==26.9.3", "mcp==1.26.0"]
+
+[dependency-groups]
+dev = ["pytest==9.1.1"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
